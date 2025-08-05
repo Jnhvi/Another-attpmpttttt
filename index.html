@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janhavi's Secret Blog</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+      color: #e0e0e0;
+      font-family: 'Orbitron', sans-serif;
+      padding: 50px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+      }
+      to {
+        text-shadow: 0 0 20px #00fff7, 0 0 30px #00fff7;
+      }
+    }
+
+    .typing {
+      border-right: 2px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.8s step-end infinite;
+      font-size: 1.4em;
+      margin-top: 20px;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .poem-section {
+      margin-top: 100px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    audio {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Janhavi's World</h1>
+  <div class="typing">Welcome to my chaotic, beautiful, digital mindspace...</div>
+
+  <div class="poem-section">
+    <h2>🌌 A Poem From the Void</h2>
+    <p>
+      I wrote with stars in my blood,<br>
+      Danced with ghosts in my head.<br>
+      My heart? A sci-fi novel—<br>
+      Never quite alive or dead.<br><br>
+
+      On this screen I carve my truth,<br>
+      Between code and cosmic light.<br>
+      I’m just Janhavi, a nebula in flesh,<br>
+      Writing dreams late at night.
+    </p>
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2023/03/02/audio_d5784b83db.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
